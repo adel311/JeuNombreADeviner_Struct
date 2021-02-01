@@ -51,7 +51,7 @@ int TirerNombreMystere()
 
 void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 {
-    //A COMPLETER
+    
 }
 
 
@@ -71,6 +71,7 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 	  	joueur.nbPartiesGagnees ++;	   	
 	
 	  }
+
 }
 
 // Nom : ResultatsJoueur
@@ -83,7 +84,10 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 
 void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
 {
-    cout << 
+    nbsucces = joueur.nbPartiesGagnees;
+    nbessais = joueur.nbTentatives;
+    nbechec = joueur.nbessais - joueur.nbsucces;
+    
 }
 
 // Nom :Nom
