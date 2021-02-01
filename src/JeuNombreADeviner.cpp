@@ -63,7 +63,14 @@ void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 
 void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 {
-   // A COMPLETER
+  joueur.nbTentatives = joueur.nbTentatives + nbEssais;
+  joueur.nbPartiesJouees ++; 
+  if (gagne == true)
+  	
+	  {
+	  	joueur.nbPartiesGagnees ++;	   	
+	
+	  }
 }
 
 // Nom : ResultatsJoueur
@@ -76,7 +83,7 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 
 void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
 {
-    // A COMPLETER
+    cout << 
 }
 
 // Nom :Nom
