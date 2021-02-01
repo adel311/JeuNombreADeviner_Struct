@@ -23,6 +23,10 @@ using namespace std;
 
 void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 {
+ joueurAcreer.nom = un_nom;
+ joueurAcreer.nbPartiesJouees = 0;
+ joueurAcreer.nbPartiesGagnees = 0;
+ joueurAcreer.nbTentatives = 0;
     //A COMPLETER
 }
 
